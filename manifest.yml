@@ -17,7 +17,8 @@ application:
 services:
   sillytavern:
     #  ghcr.io/sillytavern/sillytavern:1.13.4
-    image: xget.xi-xu.me/cr/ghcr/sillytavern/sillytavern:1.13.4
+    # #xget.xi-xu.me/cr/ghcr/
+    image: ghcr.nju.edu.cn/sillytavern/sillytavern:1.13.4
     environment:
       - NODE_ENV=production
       - FORCE_COLOR=1
