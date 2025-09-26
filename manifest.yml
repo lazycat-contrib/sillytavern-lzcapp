@@ -1,0 +1,28 @@
+name: SillyTavern
+package: cloud.lazycat.app.sillytavern
+version: 1.13.4
+min_os_version: 1.3.8
+homepage: https://github.com/SillyTavern/SillyTavern
+author: SillyTavern
+application:
+  subdomain: sillytavern
+  background_task: true
+  public_path:
+    - /
+
+  upstreams:
+    - location: /
+      backend: http://sillytavern:8000/
+
+services:
+  sillytavern:
+    #  ghcr.io/sillytavern/sillytavern:1.13.4
+    image: xget.xi-xu.me/cr/ghcr/sillytavern/sillytavern:1.13.4
+    environment:
+      - NODE_ENV=production
+      - FORCE_COLOR=1
+    binds:
+      - /lzcapp/var/config:/home/node/app/config
+      - /lzcapp/var/data:/home/node/app/data
+      - /lzcapp/var/plugins:/home/node/app/plugins
+      - /lzcapp/var/extensions:/home/node/app/public/scripts/extensions/third-party
