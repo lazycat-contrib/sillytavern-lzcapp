@@ -9,7 +9,8 @@ application:
 services:
   sillytavern:
     # ghcr.io/sillytavern/sillytavern:1.13.4
-    image: ghcr.1ms.run/sillytavern/sillytavern:1.13.4
+    # upstream: ghcr.io/sillytavern/sillytavern:1.18.0
+    image: ghcr.1ms.run/sillytavern/sillytavern:1.18.0
     environment:
       - NODE_ENV=production
       - FORCE_COLOR=1

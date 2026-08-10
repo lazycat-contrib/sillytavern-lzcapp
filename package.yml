@@ -1,5 +1,5 @@
 package: cloud.lazycat.app.sillytavern
-version: 1.13.4
+version: 1.18.0
 name: SillyTavern
 description: SillyTavern 是一个用于与文本生成 LLM、图像生成引擎和 TTS 语音模型交互的本地用户界面。
 min_os_version: 1.5.0
