@@ -1,6 +1,6 @@
 package: cloud.lazycat.app.sillytavern
 license: AGPL-3.0
-version: 1.19.0
+version: 1.19.1
 name: SillyTavern
 description: SillyTavern 是一个用于与文本生成 LLM、图像生成引擎和 TTS 语音模型交互的本地用户界面。
 min_os_version: 1.5.0
